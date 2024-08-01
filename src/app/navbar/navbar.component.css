@@ -1,0 +1,19 @@
+.navbar{
+    background-color:  rgb(44, 62, 80);
+}
+.navbar-brand{
+color:#FFFFFF;
+font-size:32px;
+font-weight: 700;
+}
+
+.nav-item .nav-link{
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 18px;
+    padding:5px 10px;
+}
+
+.activelinks{
+    background-color: rgb(26, 188, 156);
+}

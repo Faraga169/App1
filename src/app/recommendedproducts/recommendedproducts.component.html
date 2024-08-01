@@ -1,0 +1,37 @@
+
+<section class=" recommended bg-dark text-center pb-5 pt-5 d-flex justify-content-center align-items-center">
+    <div class="container">
+     <div class="row">
+        @for(items of product;track $index){
+            <div class="col-md-4 mt-2">
+                <div class="item1 bg-dark rounded-3 text-light">
+                  <img src="{{items.img}}" class="w-100 rounded-3" alt="">
+                 <div class="productname bg-danger-subtle d-flex justify-content-center align-items-center">
+                    <h3 class="text-dark">Name:</h3>
+                    <span class="fs-3 p-3 text-info">{{items.name}}</span>
+                 </div>
+                 <div class="categoryname bg-dark-subtle d-flex justify-content-center align-items-center">
+                    <h3 class="text-dark">category:</h3>
+                    <span class="fs-3 p-3 text-info">{{items.category}}</span>
+                 </div>
+                 <div class="salary bg-info-subtle d-flex justify-content-center align-items-center">
+                    <h3 class="text-dark">salary:</h3>
+                    <span class="fs-3 p-3 text-info">{{items.salary}}</span>
+                 </div>
+                 
+                 <div class="onsale d-flex bg-warning-subtle justify-content-center align-items-center">
+                    <h3 class="text-dark">onsale:</h3>
+                    <span class="fs-3 p-3 text-info">{{items.onsale}}</span>
+                 </div>
+                 
+                </div>
+            </div>
+        }
+     </div>
+    </div>
+
+</section>
+
+
+
+

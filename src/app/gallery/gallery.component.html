@@ -1,0 +1,94 @@
+
+<section class=" gallery text-center pb-5 pt-5 d-flex justify-content-center align-items-center">
+    <div class="container">
+     <div class="row">
+         <h3 class="title fs-1">Gallery component</h3>
+         <div class="titleshape d-flex justify-content-center align-items-center  ">
+             <div class="shape1 me-3"></div>
+             <i class="fa-solid fa-star text-light  " ></i>
+             <div class="shape1 ms-3"></div>
+         </div>
+        @for(items of list;track $index){
+            <div class="col-md-4 mt-2">
+                <div class="item1 bg-dark rounded-3 text-light">
+                  <img src="{{items.img}}" class="w-100 rounded-3" alt="">
+                 <div class="productname bg-danger-subtle d-flex justify-content-center align-items-center">
+                    <h3 class="text-dark">Name:</h3>
+                    <span class="fs-3 p-3 text-info">{{items.name}}</span>
+                 </div>
+                 <div class="categoryname bg-dark-subtle d-flex justify-content-center align-items-center">
+                    <h3 class="text-dark">category:</h3>
+                    <span class="fs-3 p-3 text-info">{{items.category}}</span>
+                 </div>
+                 <div class="salary bg-info-subtle d-flex justify-content-center align-items-center">
+                    <h3 class="text-dark">salary:</h3>
+                    <span class="fs-3 p-3 text-info">{{items.salary}}</span>
+                 </div>
+                 
+                 <div class="onsale d-flex bg-warning-subtle justify-content-center align-items-center">
+                    <h3 class="text-dark">onsale:</h3>
+                    <span class="fs-3 p-3 text-info">{{items.onsale}}</span>
+                 </div>
+                 
+                </div>
+            </div>
+        }
+     </div>
+    </div>
+
+</section>
+<h2 #h2 class="text-light bg-dark text-center p-4 mb-0">Recommended products</h2>
+@defer(on interaction(h2)){
+    <app-recommendedproducts></app-recommendedproducts>
+}
+
+@loading(minimum 5000ms){
+    <h2>Wait for recommended products</h2>
+}
+
+
+<section class="footer text-center text-light p-5">
+  <div class="container">
+     <div class="row">
+         <div class="col-md-4">
+             <div class="item">
+                 <h3>LOCATION</h3>
+                 <p>2215 John Daniel Drive</p>
+                 <p>Clark, MO 65243</p>
+             </div>
+         </div>
+         <div class="col-md-4">
+             <div class="item">
+                 <h3>AROUND THE WEB</h3>
+                 <div class="icons d-flex justify-content-center align-items-center gap-2">
+                     <div class="icon d-flex justify-content-center align-items-center rounded-circle">
+                        <i class="fa-brands fa-facebook"></i>
+                     </div>
+                     <div class="icon d-flex justify-content-center align-items-center rounded-circle">
+                         <i class="fa-brands fa-twitter"></i>
+                     </div>
+                     <div class="icon d-flex justify-content-center align-items-center rounded-circle">
+                         <i class="fa-brands fa-linkedin"></i>
+                     </div>
+                     <div class="icon d-flex justify-content-center align-items-center rounded-circle">
+                         <i class="fa-solid fa-globe"></i>
+                     </div>
+            </div>
+                
+             </div>
+         </div>
+         <div class="col-md-4">
+             <div class="item">
+                 <h3>ABOUT FREELANCER</h3>
+                 <p>Freelance is a free to use, licensed Bootstrap theme created by Route</p>
+               
+             </div>
+         </div>
+     </div>
+  </div>
+</section>
+
+
+<div class="copyright text-center py-3">
+ <p>Copyright © Your Website 2021</p>
+</div>

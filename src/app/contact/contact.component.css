@@ -1,0 +1,72 @@
+.title{
+    color:rgb(44, 62, 80);
+    font-size:32px;
+    font-weight: 700;
+    
+}
+
+.contact {
+    margin-top: 80px;
+}
+.titleshape i{
+    color:rgb(44, 62, 80);
+}
+
+.item1{
+    position: relative;
+}
+
+.layer{
+    position:absolute;
+    top:0px;
+    left:0px;
+    bottom:0px;
+    right:0px;
+    background-color: rgb(26, 188, 156);
+   opacity: 0;
+   transition: all 1s;
+   cursor: pointer;
+}
+
+.layer:hover{
+    opacity:1;
+}
+.layer i{
+    font-size: 70px;
+}
+.shape1{
+width:70px;
+height:3px;
+background-color: rgb(44, 62, 80);
+}
+
+.icon{
+height:30px;
+width:30px;
+border:1px solid white;
+}
+
+.footer{
+background-color:  rgb(44, 62, 80);
+}
+
+.copyright{
+background-color:  rgb(26, 37, 47);
+color:rgb(240, 248, 255);
+}
+
+
+.form-control:focus{
+    box-shadow: none;
+}
+
+.form-control:focus label{
+    color:aqua;
+}
+
+.submit{
+    background-color: rgb(26, 188, 156);
+    padding: 10px 10px;
+    color:beige;
+    border: 1px solid rgb(26, 188, 156);;
+}

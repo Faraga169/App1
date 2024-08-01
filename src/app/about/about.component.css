@@ -1,0 +1,29 @@
+.title{
+        color:#FFFFFF;
+        font-size:32px;
+        font-weight: 700;
+        
+}
+.about{
+    background-color: rgb(26, 188, 156);
+}
+.shape1{
+    width:70px;
+    height:3px;
+    background-color: #FFFFFF;
+}
+
+.icon{
+    height:30px;
+    width:30px;
+    border:1px solid white;
+}
+
+.footer{
+    background-color:  rgb(44, 62, 80);
+}
+
+.copyright{
+   background-color:  rgb(26, 37, 47);
+   color:rgb(240, 248, 255);
+}
